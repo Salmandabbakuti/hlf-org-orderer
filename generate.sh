@@ -4,6 +4,7 @@ rm -rf channel-artifacts
 mkdir channel-artifacts
 export PATH=${PWD}/bin:${PWD}:$PATH
 export FABRIC_CFG_PATH=$PWD
+sudo rm -rf crypto-config
 sleep 2
 cryptogen generate --config=crypto-config.yaml
 sleep 1
